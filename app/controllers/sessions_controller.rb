@@ -1,4 +1,5 @@
 class SessionsController <ApplicationController
+  include CurrentUserConcern
  def create
     user = User
       .find_by(email: params["user"]["email"])
@@ -12,9 +13,7 @@ class SessionsController <ApplicationController
         user: user
       }
     else
-      render json: {
-        status: 401
-      } 
+      render json: params[user].errors, status: :unprocessable_entity
     end
   end
  def logged_in
