@@ -35,7 +35,7 @@ config.middleware.insert_before 0, Rack::Cors do
       end
 end
     config.action_dispatch.default_headers = {
-      'Access-Control-Allow-Origin' => 'http://localhost.com:3000',
+      'Access-Control-Allow-Origin' => '*',
     'Access-Control-Request-Method' => %w{GET POST OPTIONS}.join(",")
   }
     # Don't generate system test files.
