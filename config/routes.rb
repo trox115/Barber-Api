@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   resources :barbers, only:[:show,:get]
   delete :logout, to: "sessions#logout"
   delete :logout, to: "sessions#logout"
+  get :sessions, to: "sessions#create"
   get :logged_in, to: "sessions#logged_in"
   get :barbers, to: "barbers#index"
   get :bookings, to: "bookings#index"
