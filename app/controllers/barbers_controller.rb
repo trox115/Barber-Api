@@ -1,5 +1,4 @@
 class BarbersController < ApplicationController
-    before_action :cors_set_access_control_headers
   # GET /barbers
   def index
     @barber=Barber.all

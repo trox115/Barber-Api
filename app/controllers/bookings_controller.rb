@@ -15,7 +15,7 @@ class BookingsController <ApplicationController
     end
   end
   def show 
-    @booking=Booking.all
+    @booking=Booking.where(:user_id => @current_user)
     render json: @booking
   end
 
