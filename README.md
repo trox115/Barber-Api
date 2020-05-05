@@ -1,24 +1,46 @@
-# README
+# Barber Booking App
+An app that allow users to book a barber. The purpose of the entire project is to work with a full-stack ( ruby on rails and react).
+On a new version it will allow the barber to register too.
+This is just the API
+## Built With
+- Javascript
+- React
+- React-redux
+- React-router
+- npm
+- Ruby on Rails
+- CSS 
+- Html
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## Getting Started
 
-Things you may want to cover:
+Open the [Live Demo Link](https://antoniobarberapi.herokuapp.com/) .
 
-* Ruby version
+## Author
 
-* System dependencies
+👤 António Fernandes
 
-* Configuration
+[Github](https://github.com/trox115) | [Twitter](https://twitter.com/rock_67) 
 
-* Database creation
+## 🤝 Contributing
+Contributions, issues and feature requests are welcome!
 
-* Database initialization
+Feel free to check the issues page.
 
-* How to run the test suite
+Need More Work:
+- Transitions.
+- Improve UI/UX
+- API CORS semi-blocking warning.
+- Barber Register
+- Redirect to Login
 
-* Services (job queues, cache servers, search engines, etc.)
+## Show your support
+Give a star ⭐️ if you like this project!
 
-* Deployment instructions
+## Acknowledgments
 
-* ...
+[Murat Korkmaz on Behance](https://www.behance.net/gallery/26425031/Vespa-Responsive-Redesign) inspired the design.
+
+### License
+
+This project is MIT licensed.
