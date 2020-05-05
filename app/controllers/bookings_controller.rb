@@ -1,4 +1,5 @@
 class BookingsController <ApplicationController
+  include CurrentUserConcern
   def index
     @booking=Booking.all
 
@@ -12,6 +13,10 @@ class BookingsController <ApplicationController
     else
       render json: @booking.errors, status: :unprocessable_entity
     end
+  end
+  def show 
+    @booking=Booking.where(:user_id => @current_user)
+    render json: @booking
   end
   private
 

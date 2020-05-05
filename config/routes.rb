@@ -8,9 +8,10 @@ Rails.application.routes.draw do
   delete :logout, to: "sessions#logout"
   delete :logout, to: "sessions#logout"
   get :sessions, to: "sessions#create"
-  get :logged_in, to: "sessions#logged_in"
+  get :loggedin, to: "sessions#logged_in"
   get :barbers, to: "barbers#index"
   get :bookings, to: "bookings#index"
+  get :show, to: "bookings#show"
   post :bookings, to: "bookings#create"
   root to: "static#home"
 end
