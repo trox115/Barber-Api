@@ -10,18 +10,18 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2020_05_06_211017) do
+ActiveRecord::Schema.define(version: 2020_05_06_215321) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
   create_table "barbers", force: :cascade do |t|
     t.string "name"
-    t.string "shortD"
-    t.string "fb"
-    t.string "tw"
-    t.string "ins"
-    t.string "phto"
+    t.string "short_description"
+    t.string "facebook"
+    t.string "twitter"
+    t.string "instagram"
+    t.string "photo_link"
     t.string "description"
     t.string "color"
     t.datetime "created_at", precision: 6, null: false
