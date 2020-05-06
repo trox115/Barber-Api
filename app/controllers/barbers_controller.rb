@@ -1,7 +1,7 @@
 class BarbersController < ApplicationController
   # GET /barbers
   def index
-    @barbers=Barber.all
+    @barbers = Barber.all
 
     render json: @barbers
   end
@@ -11,4 +11,3 @@ class BarbersController < ApplicationController
     render json: @barber
   end
 end
-
