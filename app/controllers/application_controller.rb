@@ -11,7 +11,7 @@ end
 protected
 
 def cors_set_access_control_headers
-  response.headers["Cache-Control"]="max-age=3600"
+  response.headers["Cache-Control"]="max-age=3"
   response.headers['Access-Control-Allow-Origin'] = 'https://antoniobarberapi.herokuapp.com'
   response.headers['Access-Control-Allow-Methods'] = 'POST, GET, PUT, PATCH, DELETE, OPTIONS'
   response.headers['Access-Control-Allow-Headers'] = 'Origin, Content-Type, Accept, Authorization, Token, ' \
