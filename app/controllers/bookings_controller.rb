@@ -1,9 +1,8 @@
 class BookingsController <ApplicationController
-  include CurrentUserConcern
   def index
-    @booking=Booking.all
+    @bookingd=Booking.all
 
-    render json: @booking
+    render json: @bookings
   end
   def create
     @booking =Booking.new(booking_params)
@@ -15,8 +14,8 @@ class BookingsController <ApplicationController
     end
   end
   def show 
-    @booking=Booking.where(:user_id => @current_user)
-    render json: @booking
+    @bookings=Booking.where(:user_id => @current_user)
+    render json: @bookings
   end
 
   private
