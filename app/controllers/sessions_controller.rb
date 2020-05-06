@@ -14,7 +14,7 @@ class SessionsController < ApplicationController
     else
       render json: params[user].errors, status: :unprocessable_entity
     end
-   end
+  end
 
   def logged_in
     if @current_user
@@ -27,7 +27,7 @@ class SessionsController < ApplicationController
         logged_in: false
       }
     end
-   end
+  end
 
   def logout
     reset_session
