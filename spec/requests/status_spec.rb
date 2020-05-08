@@ -9,7 +9,6 @@ RSpec.describe 'Status of the API' do
     end
     it 'returns the http code 200' do
       get('/')
-      json = JSON.parse(response.body)
       expect(response.status).to eql(200)
     end
   end
