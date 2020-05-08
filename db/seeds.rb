@@ -1,7 +1,5 @@
-# This file should contain all the record creation needed to seed the database with its default values.
-# The data can then be loaded with the rails db:seed command (or created alongside the database with db:setup).
-#
-# Examples:
-#
-#   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
-#   Character.create(name: 'Luke', movie: movies.first)
+Barber.create("name"=>"John Doe", "short_description"=>"Barber with 1 year", "facebook"=>"https://facebook.com", "twitter"=>"https://twitter.com", "instagram"=>"https://instagram.com", "photo_link"=>"barber1", "description"=>"This is a very new barber, only one year experience but the price is cheap and if you want a bald haircut there is no way this could be wrong", "color"=>"#96BF24")
+Barber.create("name"=>"Telmo Doe", "short_description"=>"Barber with3 years experience", "facebook"=>"https://facebook.com/barber", "twitter"=>"https://twitter.com/barber", "instagram"=>"https://instagram.com/barber", "photo_link"=>"babrer2", "description"=>"Good barber with 3 years experience. Never cutted a head and only cut a ear once", "color"=>"blue")
+Barber.create("name"=>"Rich Doe", "short_description"=>"Barber with 5 years experience", "facebook"=>"https://facebook.com/barber2", "twitter"=>"https://twitter.com/barber2", "instagram"=>"https://instagram.com/barber2", "photo_link"=>"Barber3", "description"=>"Good barber with 5 years experience.He loves mot bikes Never cutted a head and only cut a ear once", "color"=>"red")
+Barber.create("name"=>"Alan Doe", "short_description"=>"Barber with 15 years experience", "facebook"=>"https://facebook.com/barber4", "twitter"=>"https://twitter.com/barber4", "instagram"=>"https://instagram.com/barber2", "photo_link"=>"Barber4", "description"=>"Good barber with 5 years experience.He loves scissors Never cutted a head and only cut a ear once", "color"=>"black")
+User.create("email"=>"test@test.com", "password"=>"1234","password_confirmation"=>"1234")
