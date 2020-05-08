@@ -44,7 +44,7 @@ For installation instructions follow [The Instalation Guide](https://www.tutoria
 
 Once you have installed the requiered packages shown on the [Required Installations](), proceed with the following steps
 
-Clone the Repository, the folder toy_app will be downloaded
+Clone the Repository, the folder barber-api will be downloaded
 
 ```Shell
 your@pc:~$ git clone https://github.com/trox115/barber-api.git
