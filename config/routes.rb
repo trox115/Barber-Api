@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   match '*all', controller: 'application', action: 'cors_preflight_check', via: [:options]
   resources :registrations, only:[:create]
   delete :logout, to: "sessions#logout"
