@@ -54,4 +54,3 @@ group :test do
   gem 'faker'
 end
 gem 'date_validator'
-
