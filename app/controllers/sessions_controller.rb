@@ -1,9 +1,8 @@
-class SessionsController <ApplicationController
-  include CurrentUserConcern
- def create
+class SessionsController < ApplicationController
+  def create
     user = User
-      .find_by(email: params["user"]["email"])
-      .try(:authenticate, params["user"]["password"])
+      .find_by(email: params['user']['email'])
+      .try(:authenticate, params['user']['password'])
 
     if user
       session[:user_id] = user.id
@@ -16,7 +15,8 @@ class SessionsController <ApplicationController
       render json: params[user].errors, status: :unprocessable_entity
     end
   end
- def logged_in
+
+  def logged_in
     if @current_user
       render json: {
         logged_in: true,
@@ -28,10 +28,11 @@ class SessionsController <ApplicationController
       }
     end
   end
+
   def logout
     reset_session
     render json: {
-      logged_out: true,
+      logged_out: true
     }
   end
 end
