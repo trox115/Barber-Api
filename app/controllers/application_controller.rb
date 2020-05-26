@@ -8,7 +8,7 @@ class ApplicationController < ActionController::Base
 
     cors_set_access_control_headers
     render json: {}
-end
+  end
 
   protected
 
