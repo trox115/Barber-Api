@@ -1,7 +1,7 @@
 # Barber Booking App - API
 
-An app that allows users to book a barber. The purpose of the entire project is to work with a full-stack ( Ruby on Rails and React ).
-On a new version it will allow the barber to register too (Front End). But since this is the API, you can do it here.
+An app that allows users to book a barber. The purpose of the entire project is to work with a Full-Stack (Ruby on Rails and React).
+On a new version it will allow the barber to register too (Front-End). But since this is the API, you can do it here.
 This is just the API
 
 ## Built With
@@ -60,13 +60,13 @@ Move to the downloaded folder
 your@pc:~$ cd barber-api
 ```
 
-install gems
+Install gems
 
 ```Shell
 your@pc:~$ bundle install --without production
 ```
 
-migrate the database
+Migrate the database
 
 ```Shell
 your@pc:~$ rails db:create
@@ -88,7 +88,7 @@ your@pc:~$ rails db:seed
 
 ```
 
-it will create Barbers and a user Test
+It will create Barbers and a user Test
 
 To manually add a barber use:
 
@@ -98,7 +98,7 @@ rbenv :001 > Barber.create("name"=>"John Doe", "short_description"=>"Barber with
 
 ```
 
-lastly, run the server
+Lastly, run the server
 
 ```Shell
 your@pc:~$ rails server -p 3001
